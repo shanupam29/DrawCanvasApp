@@ -7,6 +7,9 @@
 ### Getting Started
    - Download the zip into local IDE(Eclipse or IntelliJ), complile and run the code using main class, Draw Canvas App
      (com.creditsuisse.canvas.draw.app.DrawCanvasApp)
+   - Run the Executable Jar file Draw-Canvas-1.0-SNAPSHOT.jar by running below command.
+
+     java -jar Draw-Canvas-1.0-SNAPSHOT.jar
 
    #### API Details.
    - Standalone App using main class i.e. com.creditsuisse.canvas.draw.app.DrawCanvasApp to run the app.
