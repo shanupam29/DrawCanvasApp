@@ -29,14 +29,4 @@ public class Line implements Shape {
     public Boolean validateDimensions() {
         return ((coordinatesStart.getX_Axis() == coordinatesEnd.getX_Axis()) && (coordinatesStart.getY_Axis() == coordinatesEnd.getY_Axis()));
     }
-
-   /* private char[][] drawLine(Coordinates start, Coordinates end, char[][] canvasArray, char lineChar) {
-        for (int i = start.getY_Axis(); i <= end.getY_Axis(); i++) {
-            for (int j = start.getX_Axis(); j <= end.getX_Axis(); j++) {
-                canvasArray[i][j] = lineChar;
-            }
-        }
-        return canvasArray;
-    }*/
-
 }

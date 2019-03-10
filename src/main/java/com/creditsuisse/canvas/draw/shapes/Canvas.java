@@ -37,7 +37,7 @@ public final class Canvas {
         this.shapes.add(shape);
     }
 
-    public void drawCanvas() {
+    public String drawCanvas() {
         // Method to set the border's using charactor '-' and '|' using array representation matrix.
         for (int row = 0; row < charArrayForBorder.length; row++) {
             for (int col = 0; col < charArrayForBorder[row].length; col++) {
@@ -54,10 +54,10 @@ public final class Canvas {
         for (Shape shape : shapes) {
             charArrayForBorder = shape.draw(charArrayForBorder);
         }
-        printToConsole();
+        return printToConsole();
     }
 
-    private void printToConsole() {
+    private String printToConsole() {
         StringBuilder strBuilder = new StringBuilder();
         for(int i=0;i<this.height;i++) {
             for(int j=0;j<this.width;j++) {
@@ -65,7 +65,16 @@ public final class Canvas {
             }
             strBuilder.append("\n");
         }
-        System.out.print(strBuilder.toString().trim());
+        String finalShape = strBuilder.toString().trim();
+        System.out.print(finalShape);
+        return finalShape;
     }
 
+    public Integer getHeight() {
+        return height;
+    }
+
+    public Integer getWidth() {
+        return width;
+    }
 }
